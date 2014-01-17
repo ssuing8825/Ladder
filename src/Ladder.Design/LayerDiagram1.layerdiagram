@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<layerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="68f572e5-3903-475a-84e7-63132a85b4c8" xmlns="http://schemas.microsoft.com/VisualStudio/TeamArchitect/LayerDesigner">
+  <comments>
+    <comment Id="f0c44f8d-915c-4c8e-b78c-2b5036a1cfa9" name="Comment2">
+      <body>HAS PLAYER</body>
+    </comment>
+    <comment Id="41f310a0-80b3-41ce-84d7-5c36e6f3cb3c" name="Comment11">
+      <body>HAS_PLAYER</body>
+    </comment>
+    <comment Id="3d691c3c-7a65-40f4-bd4b-092d0e97eac5" name="Comment12">
+      <body>WON</body>
+    </comment>
+    <comment Id="835091c1-cd41-4148-88dd-516e32d2a2ad" name="Comment13">
+      <body>LOST</body>
+    </comment>
+    <comment Id="32ca8b15-9ba0-42b1-a5fd-ccc7f6c9cbaa" name="Comment121">
+      <body>OCCURRED_IN</body>
+    </comment>
+    <comment Id="e4ebad4b-776d-4ca4-9bc1-5c7a4625f342" name="Comment1211">
+      <body>RANKED</body>
+    </comment>
+    <comment Id="bedd4ea2-e544-499f-b9d4-ee965087ca1f" name="Comment1212">
+      <body>RANKED</body>
+    </comment>
+    <comment Id="b87f7e0f-368f-4a9a-b11f-98ac88cd9a50" name="Comment1213">
+      <body>CONTAINS</body>
+    </comment>
+  </comments>
+  <layers>
+    <layer Id="e891808c-0cb6-47a9-8b23-d7e7ab77f2ed" name="PLAYER:Bob">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="1cbf5c3e-b51a-497c-b958-b346e186f81f" direction="Forward">
+          <layerMoniker Id="5adaba3b-831e-41d5-aa2a-b5289f091ee2" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="006b3cb8-77ce-4ea0-87da-19560af33d8d" name="PLAYER:Joe">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="a4457925-ca6b-4d06-9495-622974b07d9d" direction="Forward">
+          <layerMoniker Id="5adaba3b-831e-41d5-aa2a-b5289f091ee2" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="2edbf3cc-0196-454d-b75f-f3f11ffd2488" name="TOURNAMENT">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="12cd4004-de70-4922-a1b7-01f543fa6772" direction="Forward">
+          <layerMoniker Id="e891808c-0cb6-47a9-8b23-d7e7ab77f2ed" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="029ed18c-c6b2-497b-bf9d-f3c6143aa911" direction="Forward">
+          <layerMoniker Id="006b3cb8-77ce-4ea0-87da-19560af33d8d" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="b58fd59f-9137-41cf-9510-13c7a7bdc2b1" direction="Forward">
+          <layerMoniker Id="0bae0bb8-cbfc-49c8-bcf1-d8e3d389eddc" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="0bae0bb8-cbfc-49c8-bcf1-d8e3d389eddc" name="COMPETITION_WEEK">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="575018da-5a1b-4d90-a515-af0f5696a74f" direction="Forward">
+          <layerMoniker Id="e891808c-0cb6-47a9-8b23-d7e7ab77f2ed" />
+        </dependencyFromLayerToLayer>
+        <dependencyFromLayerToLayer Id="98c3a1f2-5406-49ee-a3e2-abd51bea6ad3" direction="Forward">
+          <layerMoniker Id="006b3cb8-77ce-4ea0-87da-19560af33d8d" />
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+    <layer Id="5adaba3b-831e-41d5-aa2a-b5289f091ee2" name="MATCH">
+      <dependencyToLayers>
+        <dependencyFromLayerToLayer Id="9c1872d6-2211-41b9-add4-9a557254d57b" name="asdf" direction="Forward">
+          <layerMoniker Id="0bae0bb8-cbfc-49c8-bcf1-d8e3d389eddc" />
+          <description>asdf</description>
+        </dependencyFromLayerToLayer>
+      </dependencyToLayers>
+    </layer>
+  </layers>
+</layerModel>
